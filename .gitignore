@@ -12,3 +12,9 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+
+**/__pycache__
+**/*.pyc
+./hello_world_go/hello_world_go
+./hello_world_rust/target
+
