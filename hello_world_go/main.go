@@ -1,15 +1,15 @@
 package main
 
 import (
-  "io"
-  "net/http"
+	"io"
+	"net/http"
 )
 
 func main() {
-  http.HandleFunc("/", helloWorld)
-  http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/", helloWorld)
+	http.ListenAndServe(":8080", nil)
 }
 
 func helloWorld(w http.ResponseWriter, r *http.Request) {
-  io.WriteString(w, "Hello world!")
+	io.WriteString(w, "Hello world from Golang!")
 }
